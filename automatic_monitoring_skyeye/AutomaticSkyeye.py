@@ -12,9 +12,13 @@ def skyeye_res(pick_num):
     def inner(func):
         def wrapper(self, browser):
             func(self, browser)
+            time.sleep(1)
             browser.find_element_by_class_name('fa-chevron-down').click()
+            time.sleep(1)
             browser.find_elements_by_class_name('select-box')[2].click()
+            time.sleep(1)
             browser.find_elements_by_class_name('skyEye-checkbox__label')[pick_num].click()
+            time.sleep(1)
             browser.find_element_by_class_name('btn-search').click()
             time.sleep(3)
             # 下载
