@@ -20,7 +20,8 @@ def main():
         skyeye = AutomaticSkyeye(username, passwd, url)
         skyeye.run()
         logging.info('巡检结束...')
-        time.sleep(6)
+        # 继续下个区域巡检，休眠时间
+        time.sleep(8)
 
     logging.info('-' * 10 + 'over' + '-' * 10)
 
