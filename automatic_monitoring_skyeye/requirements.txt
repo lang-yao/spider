@@ -4,7 +4,7 @@ chardet==3.0.4
 configparser==4.0.2
 idna==2.8
 lxml==4.4.2
-Pillow==7.0.0
+Pillow==9.3.0
 pytesseract==0.3.2
 requests==2.22.0
 selenium==3.141.0
